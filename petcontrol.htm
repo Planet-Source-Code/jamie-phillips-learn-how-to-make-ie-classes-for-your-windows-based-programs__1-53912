@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="34%" border="0" align="center">
+  <tr>
+    <td><font face="Arial, Helvetica, sans-serif" size="2">How to make IE shell 
+      comand your windows based programs</font></td>
+  </tr>
+</table>
+<table width="73%" border="0" align="center">
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Step by step how to!</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">If anyone has ever 
+      used yahoo Messager and wonder how the <img src="http://us.i1.yimg.com/us.yimg.com/i/ppl/ltn.gif" border=0 alt=""> 
+      works here's how</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">The shortcut command 
+      in IE is ymsgr:sendIM?username</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Within the Windows 
+      register is the ymsgr class that contorols it</font></td>
+  </tr>
+  <tr> 
+    <td><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="2">HKEY_LOCAL_MACHINE 
+      / Classes / ymsgr</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">You will see a few 
+      things in this folder</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">ymsgr / shell / open 
+      / command</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">The only two things 
+      that you need to emulate to make one of your own is to copy whats in the 
+      ymsgr folder</font></td>
+  </tr>
+  <tr> 
+    <td><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="2">(Default) 
+      URL:Ymessenger protocol</font></td>
+  </tr>
+  <tr> 
+    <td><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="2">URL 
+      Protocol</font></td>
+  </tr>
+</table>
+<table width="73%" border="0" align="center">
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">So lets make are own!</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">In the <font color="#FF0000">HKEY_LOCAL_MACHINE 
+      / Classes / </font>create a new key Name is Mycontrol</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">In the Defualt value 
+      modify to read <font color="#FF0000">URL: Mycontrol Protocol</font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">then right click and 
+      add String Value and rename to <font color="#FF0000">URL Protocol</font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Next right click add 
+      new key rename to <font color="#FF0000">shell</font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">in the <font color="#0000FF">shell 
+      folder</font> right click and add a new key rename to <font color="#FF0000">Open</font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">In the <font color="#0000FF">Open 
+      folder</font> right click add new key <font color="#FF0000">command </font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Modify the default 
+      string to read to path to a vaild win32 program <font color="#FF0000">&quot;C:\program 
+      files\Winamp\winamp.exe %1&quot;</font></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Now click the link 
+      below</font></td>
+  </tr>
+</table>
+<table width="9%" border="0" align="center">
+  <tr>
+    <td>
+      <div align="center"><a href="pnetcontrol:sendIM?kingnothing">click me</a></div>
+    </td>
+  </tr>
+</table>
+<table width="73%" border="0" align="center">
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">If you get an error 
+      &quot;this is not a vaild win32 program&quot; then it worked you just need 
+      to choose another program</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">If you get the page 
+      can not be displayed then go back and check your spelling. for each step</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Now sreach for examples 
+      on how to write to the registry in Psc</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">and also look for examples 
+      for the command$</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">When a program loads 
+      the command$ statment is involed find examples on Psc on how to use the 
+      command$ statement</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
